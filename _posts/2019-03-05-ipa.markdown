@@ -1,0 +1,57 @@
+---
+layout: post
+title:  "Ingress Personal Assistant: Overview"
+date:   2019-03-05 07:27:31 -0600
+categories: review
+---
+
+## What is Ingress Personal Assistant (IPA)?
+IPA is a third party client for the mobile game [Ingress](https://www.ingress.com/). It was purely designed to be used for allowing additional functionality and behaviors that is directly against the core ideals of the game. This undetectable cheating client was not widely known about and was held in private use only.
+
+# Map Overview
+<img
+   align="right"
+   src="/assets/ipa/map.png"
+   width="200"
+   style="padding-left:20px;padding-bottom:20px;">
+This feature is arguably the most important feature of the app. It allowed me to see and interact with the game without use of the game client itself. First and foremost I was able to directly set my location within the game for any later actions. Support for automatic drifting and speed limit detections were in place and could not be overridden.
+
+Using this feature in practice allowed for knowing the current game state in any location and acting upon that information from any number of linked accounts. All basic features for interacting with the environment were mirrored from the official client but would use the current set position.
+
+This experience was built by replicating the network responses of the official Ingress Intel Map and storing known good data in a local database. That known data is then overlaid on top of a native Google Maps display within the client.
+
+# Inventory Viewer
+<img
+   align="right"
+   src="/assets/ipa/inventory_overview.png"
+   width="200"
+   style="padding-left:20px;padding-bottom:20px;">
+Ingress has this concept of acquiring new items by "hacking" the points of interest called "portals". Typically you do this in a limited way because you need to physically be at those locations and it is hard to acquire mass quantities of items. They also have a client side limit on the total amount of items so the official app doesn't let you get a ton at a time.
+
+Leveraging the map feature I could access those portals at any time so I found my inventory space being maxed out very quickly. At the time it was very difficult to drop or recycle multiple items simultaneously so I added this viewer to allow me to quickly do so with a few clicks. Later on the authors of Ingress added the ability to recycle them natively.
+
+This was all made possible by intercepting the network requests of the native Android Ingress client and replicating them. This is a drastic simplification of the process.
+
+# Automation
+<img
+   align="right"
+   src="/assets/ipa/farming_in_progress.png"
+   width="200"
+   style="padding-left:20px;padding-bottom:20px;">
+Arguably the most fun part of the game is the ability to build and destroy things with a group of people. Using this client cuts out that entirely since you physically don't need to go to those locations. So I wanted to augment my normal play with teammates by giving myself essentially unlimited gear.
+
+Using the known locations of all portals in an area I was able to build a shortest path route to them all. Leveraging the automatic drift and speed limit protections I was able to safely navigate to all locations and harvest massive quantities of items. To eliminate the problem of running out of inventory space I build a simple algorithm that would clean up unwanted items if I hit a set threshold.
+
+I was able to get hundreds of thousands of items this way and it was completely undetectable to all other players around me. I could go in person and play without any limitations or restrictions on what items I would use since I could get more at any time.
+
+# Black Hole
+<img
+   align="right"
+   src="/assets/ipa/black_hole.png"
+   width="200"
+   style="padding-left:20px;padding-bottom:20px;">
+Users are required to use a specific amount of energy to do any action that interacts with portals throughout the game. This energy is called XM and is randomly distributed throughout the game and pools around portals themselves. It is visibly seen on the in-game map and the only other way of acquiring it is to recycle your items for limited amount in return.
+
+Upon finding out that the specific network response that consumes that XM from around the player doesn't actually validate correctly I started abusing it. I look for all XM around the player's location within a set distance and consume it all. Once the players XM limit has been reached it essentially destroys the XM. This was abused to destroy all XM in an area so opponents can't use this to their advantage.
+
+I learned later that this was even more broken. The unique identifiers for the XM themselves was never validated and could be repeated for infinite untraceable XM.
