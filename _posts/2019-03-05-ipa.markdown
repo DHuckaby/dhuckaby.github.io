@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Ingress Personal Assistant: Overview"
+title:  "Ingress Personal Assistant"
 date:   2019-03-05 07:27:31 -0600
 categories: review
 ---
@@ -50,7 +50,7 @@ I was able to get hundreds of thousands of items this way and it was completely 
    src="/assets/ipa/black_hole.png"
    width="200"
    style="padding-left:20px;padding-bottom:20px;">
-Users are required to use a specific amount of energy to do any action that interacts with portals throughout the game. This energy is called XM and is randomly distributed throughout the game and pools around portals themselves. It is visibly seen on the in-game map and the only other way of acquiring it is to recycle your items for limited amount in return.
+Users are required to use a specific amount of energy to do any action that interacts with portals throughout the game. This energy is called XM and is randomly distributed throughout the game and pools around portals themselves. It is visibly seen on the in-game map and the only other way of acquiring it is to recycle your items for a limited amount in return.
 
 Upon finding out that the specific network response that consumes that XM from around the player doesn't actually validate correctly I started abusing it. I look for all XM around the player's location within a set distance and consume it all. Once the players XM limit has been reached it essentially destroys the XM. This was abused to destroy all XM in an area so opponents can't use this to their advantage.
 
