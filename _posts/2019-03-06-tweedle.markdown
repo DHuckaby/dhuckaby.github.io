@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "Tweedle for Twitter"
+categories: review
+permalink: "/tweedle"
+---
+
+## What is Tweedle for Twitter?
+Tweedle is a consumer facing custom Twitter client. Throughout it's lifetime it achieved over 825k downloads, 15k reviews, and maintained an average rating of 4.2. Development started August 2011 and continued until October 2014.
+
+<p align="center">
+  <img src="/assets/tweedle/image1.png" width="24%" />
+  <img src="/assets/tweedle/image2.png" width="24%" />
+  <img src="/assets/tweedle/image3.png" width="24%" />
+  <img src="/assets/tweedle/image4.png" width="24%" />
+</p>
+
+# Pros
+Tweedle hands down has been my most successful individual project. It allowed me to interact and learn directly from my customers and taught me many valuable lessons that couldn't have been learned otherwise. One of my most proud moments was seeing it [featured](https://twitter.com/HandlerExploit/status/236522655845593088) under 'Staff Picks' on Google Play.
+
+I used Tweedle as a tool to allow me to learn new technologies and push the boundaries of what we expect from an application. As an example after the release of the [Androidify](https://play.google.com/store/apps/details?id=com.google.android.apps.androidify) application the team that developed it release a library called [svg-android](https://code.google.com/archive/p/svg-android/). This was the first time we had solid example of using SVGs on the Android platform. I used this library after converting all of my assets to SVGs and built a dynamic theming framework that allowed my users to customize their theme indefinitely.
+
+Features like this and a heavy push from the Twitter community drove the word of mouth popularity of the product. It never achieved any huge presents on the platforms biggest blogs or forums but that didn't stop it from growing continuously until the end.
+
+# Cons
+Building an application used actively by tens of thousands of people is stressful to say the least. I had no buffer between me and hundreds of emails and tweets a day. This is entirely my own fault but it does take a toll on you. When the project ended it burnt me out on the Twitter platform as a whole.
+
+I have mentioned multiple times that the project ended but not why. The same week that we were featured on Google Play Twitter made an [announcement](https://developer.twitter.com/en/developer-terms/policy.html) that moving forward all api consumers are now limited to 100k tokens unless authorized by Twitter themselves. I immediately reached out to Twitter for information on getting authorized and never received a response.
+
+I carefully built in safeguards to allow for users to [manually override](https://twitter.com/HandlerExploit/status/382012922211209216) my access tokens if my official ones were revoked for any reason and continued development. Eventually we hit a point where Twitter [stopped allowing new users](https://twitter.com/HandlerExploit/status/523453757863231488) to authenticate and I unpublished the application.
