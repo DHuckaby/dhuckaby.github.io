@@ -24,6 +24,8 @@ url: "https://huckaby.dev" # the base hostname & protocol for your site, e.g. ht
 google_analytics: "UA-135778621-1"
 github_username:  dhuckaby
 linkedin_username: dhuckaby
+disqus:
+  shortname: huckaby-dev
 
 # Build settings
 markdown: kramdown
