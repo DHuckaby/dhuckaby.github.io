@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Ingress Personal Assistant"
-date:   2019-03-05 07:27:31 -0600
 categories: review
+permalink: "/ipa"
+redirect_from:
+  - /review/2019/03/05/ipa.html
 ---
 
 ## What is Ingress Personal Assistant (IPA)?
