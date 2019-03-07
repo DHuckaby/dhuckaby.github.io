@@ -20,7 +20,7 @@ Tweedle hands down has been my most successful individual project. It allowed me
 
 I used Tweedle as a tool to allow me to learn new technologies and push the boundaries of what we expect from an application. As an example after the release of the [Androidify](https://play.google.com/store/apps/details?id=com.google.android.apps.androidify) application the team that developed it release a library called [svg-android](https://code.google.com/archive/p/svg-android/). This was the first time we had solid example of using SVGs on the Android platform. I used this library after converting all of my assets to SVGs and built a dynamic theming framework that allowed my users to customize their theme indefinitely.
 
-Features like this and a heavy push from the Twitter community drove the word of mouth popularity of the product. It never achieved any huge presents on the platforms biggest blogs or forums but that didn't stop it from growing continuously until the end.
+Features like this and a heavy push from the Twitter community drove the word of mouth popularity of the product. It never achieved a huge presence on the platforms biggest blogs or forums but that didn't stop it from growing continuously until the end.
 
 # Cons
 Building an application used actively by tens of thousands of people is stressful to say the least. I had no buffer between me and hundreds of emails and tweets a day. This is entirely my own fault but it does take a toll on you. When the project ended it burnt me out on the Twitter platform as a whole.
