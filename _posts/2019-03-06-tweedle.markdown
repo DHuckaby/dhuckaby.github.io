@@ -8,7 +8,7 @@ permalink: /tweedle
 ## What is Tweedle for Twitter?
 Tweedle is a consumer facing custom Twitter client. Throughout it's lifetime it achieved over 825k downloads, 15k reviews, and maintained an average rating of 4.2. Development started August 2011 and continued until October 2014.
 
-<p align="center">
+<p align="center" style="padding-top:20px;padding-bottom:20px;">
   <img src="/assets/tweedle/image1.png" width="24%" />
   <img src="/assets/tweedle/image2.png" width="24%" />
   <img src="/assets/tweedle/image3.png" width="24%" />
