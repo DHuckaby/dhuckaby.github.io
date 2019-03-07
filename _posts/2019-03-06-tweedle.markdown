@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Tweedle for Twitter"
+title:  Tweedle for Twitter
 categories: review
-permalink: "/tweedle"
+permalink: /tweedle
 ---
 
 ## What is Tweedle for Twitter?

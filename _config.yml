@@ -14,14 +14,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Continuous Development
+author: Daniel Huckaby
 email: daniel@huckaby.dev
 description: >- # this means to ignore newlines until "baseurl:"
   First hand accounts of projects that helped me grow as a developer. As with
   most things the technology and patterns used are a product of their time and
   will look dated and/or archaic.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://huckaby.dev" # the base hostname & protocol for your site, e.g. http://example.com
-google_analytics: "UA-135778621-1"
+url: https://huckaby.dev # the base hostname & protocol for your site, e.g. http://example.com
+google_analytics: UA-135778621-1
 github_username:  dhuckaby
 linkedin_username: dhuckaby
 disqus:

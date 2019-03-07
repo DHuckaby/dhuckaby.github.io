@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Ingress Personal Assistant"
+title:  Ingress Personal Assistant
 categories: review
-permalink: "/ipa"
+permalink: /ipa
 redirect_from:
   - /review/2019/03/05/ipa.html
 ---
