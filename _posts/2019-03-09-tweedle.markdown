@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  Tweedle for Twitter
-categories: review
 permalink: /tweedle
 project: true
 project_language: Java

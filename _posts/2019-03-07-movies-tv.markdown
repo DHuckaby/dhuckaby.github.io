@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  Movies & TV
-categories: review
 permalink: /mtv
 project: true
 project_language: Java
