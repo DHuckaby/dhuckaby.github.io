@@ -20,3 +20,9 @@
 .text-nowrap {
     white-space: nowrap;
 }
+
+.project-header {
+    font-size: $small-font-size;
+    color: $grey-color;
+    line-height: 25px
+}
