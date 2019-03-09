@@ -5,19 +5,12 @@ categories: review
 permalink: /ipa
 redirect_from:
   - /review/2019/03/05/ipa.html
+project: true
+project_language: Java
+project_language_color: "#b07219"
+project_commits: 620
+project_last_commit: Sep 16, 2014
 ---
-
-<p class="post-meta" style="padding-bottom:20px;">
-  <span class="repo-language-color" style="background-color:#b07219;"></span>
-  Java
-  <span style="padding-left:16px;">
-    <span class="text-emphasized">620</span>
-    commits
-  </span>
-  <span style="padding-left:16px;">
-    Last commit on Sep 16, 2014
-  </span>
-</p>
 
 IPA is a third party client for the mobile game [Ingress](https://www.ingress.com/). It was purely designed to be used for allowing additional functionality and behaviors that is directly against the core ideals of the game. This undetectable cheating client was not widely known about and was held in private use only.
 

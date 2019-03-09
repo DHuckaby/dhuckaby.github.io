@@ -3,19 +3,12 @@ layout: post
 title:  Tweedle for Twitter
 categories: review
 permalink: /tweedle
+project: true
+project_language: Java
+project_language_color: "#b07219"
+project_commits: "3,001"
+project_last_commit: Sep 15, 2017
 ---
-
-<p class="post-meta" style="padding-bottom:20px;">
-  <span class="repo-language-color" style="background-color:#b07219;"></span>
-  Java
-  <span style="padding-left:16px;">
-    <span class="text-emphasized">3,001</span>
-    commits
-  </span>
-  <span style="padding-left:16px;">
-    Last commit on Sep 15, 2017
-  </span>
-</p>
 
 Tweedle is a consumer facing custom Twitter client. Throughout it's lifetime it achieved over 825k downloads, 15k reviews, and maintained an average rating of 4.2. Development started August 2011 and continued until October 2014.
 
