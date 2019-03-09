@@ -25,9 +25,27 @@ The architecture of this project was designed off of the [Clean Architecture](ht
   <img src="/assets/progress/pattern_overall.png" width="40%" />
 </p>
 
-Code structure alone will not allow you to see the benefits of this pattern. Specific hard and fast rules are in place at a design guideline level to keep everything properly decoupled. Below are a few examples of such rules.
+Code structure alone will not allow you to see the benefits of this pattern. Specific hard and fast rules are in place at a design guideline level to keep everything properly decoupled.
 
 - *All entities will be immutable.*
 - *All interactors will be the most ideal interface for requesting the associated entity.*
 - *All presenters will know nothing of Android.*
 - *All view interactions (clicks/visibility changes/ect.) will be triggered from a presenter.*
+
+<style type="text/css">
+  .gist-file
+  .gist-data {max-height: 320px;}
+</style>
+
+<p style="padding-top:20px;"/>
+
+<script src="https://gist.github.com/DHuckaby/24b28cae2d9a4363693a322363a4699a.js"></script>
+
+<p style="padding-top:20px;"/>
+
+# Server Project Design
+This server component was my first example of using the [Spring framework](https://docs.spring.io/spring/docs/current/spring-framework-reference/overview.html) in a production environment. Since the userbase of this project is still in the single digits scaling wasn't much of a concern so using a simple SQLite JDBC integration for the backend data made perfect sense. Authentication via any number of social or even anonymous sources is handled by Google's [Firebase](https://firebase.google.com/) platform.
+
+This setup is all configured in [Docker](https://www.docker.com/) and ran off a [Digital Ocean Droplet](https://www.digitalocean.com/products/droplets/). Network requests are filtered through [CloudFlare](https://www.cloudflare.com/) to protect us from any denial of service attacks. Since our data is not being handled in any distributed manor we have automatic backups configured to export directly to [Amazon S3 Glacier](https://aws.amazon.com/glacier/).
+
+Since initial deployment we have had three outages but they were only caused by the underlying hardware on Digital Ocean requiring a reboot and caused no issues. Our average median response time over the last six months is 160ms.
