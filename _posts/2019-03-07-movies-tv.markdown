@@ -5,7 +5,18 @@ categories: review
 permalink: /mtv
 ---
 
-## What is Movies & TV?
+<p class="post-meta" style="padding-bottom:20px;">
+  <span class="repo-language-color" style="background-color:#b07219;"></span>
+  Java
+  <span style="padding-left:16px;">
+    <span class="text-emphasized">460</span>
+    commits
+  </span>
+  <span style="padding-left:16px;">
+    Last commit on Nov 7, 2015
+  </span>
+</p>
+
 This application was an alternative client to the Android application [Showbox](https://showboxdownloadapps.com/). Showbox is an application that allows streaming of free movies and television shows. At the time it didn't allow for downloading of content and was filled with advertisements. My client allowed for direct streaming of their pirated content without advertisements with a clean and simple user interface. This application was in active development from October 2014 until November 2015.
 
 <p align="center" style="padding-top:20px;padding-bottom:20px;">

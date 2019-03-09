@@ -1,0 +1,18 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.repo-language-color {
+    border-radius: 50%;
+    display: inline-block;
+    height: 12px;
+    position: relative;
+    top: 1px;
+    width: 12px;
+}
+
+.text-emphasized {
+    color: #24292e;
+    font-weight: 600;
+}

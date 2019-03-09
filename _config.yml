@@ -27,6 +27,7 @@ github_username:  dhuckaby
 linkedin_username: dhuckaby
 disqus:
   shortname: huckaby-dev
+show_excerpts: true
 
 # Build settings
 markdown: kramdown
