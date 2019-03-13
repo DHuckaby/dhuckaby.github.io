@@ -18,6 +18,19 @@ Progress is a simple fitness tracker for managing your weight, calories, and wat
   <img src="/assets/progress/image4.jpg" width="24%" />
 </p>
 
+# Dependency Breakdown
+- [RxJava](https://github.com/ReactiveX/RxJava)
+- [Dagger](https://google.github.io/dagger/)
+- [Jackson](https://github.com/FasterXML/jackson)
+- [OkHttp](https://github.com/square/okhttp)
+- [Otto](https://github.com/square/otto)
+- [HelloCharts](https://github.com/lecho/hellocharts-android)
+- [Timber](https://github.com/JakeWharton/timber)
+- [Mockito](https://site.mockito.org/)
+- [ANR-Watchdog](https://github.com/SalomonBrys/ANR-WatchDog)
+- [Firebase](https://firebase.google.com/)
+- [Licenser](https://github.com/marcoscgdev/Licenser)
+
 # Android Project Design
 The architecture of this project was designed off of the [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) and [MVP patterns](http://konmik.com/post/introduction_to_model_view_presenter_on_android/). From a high level it is designed to allow decoupling of responsibility for ease of maintainability and testing purposes. An earlier pre-Kotlin version of such design can be found broken down in detail [here](https://medium.com/@scottmeschke/android-decompile-deepdive-ted-cf97267229e).
 
