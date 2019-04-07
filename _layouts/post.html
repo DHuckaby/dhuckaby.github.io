@@ -8,6 +8,13 @@ layout: default
 
     {%- if page.project -%}
       {%- include project_header.html page=page -%}
+    {%- else -%}
+      <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
+      </p>
     {%- endif -%}
 
   <div class="post-content e-content" itemprop="articleBody">
