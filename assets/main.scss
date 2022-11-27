@@ -1,15 +1,16 @@
 ---
 ---
 
-blockquote > body {
+@import "{{ site.theme }}";
+
+blockquote {
+  color: #828282;
   border-left: 4px solid #e8e8e8;
   padding-left: 15px;
-  font-size: 18px;
+  font-size: 17px;
   letter-spacing: -1px; }
   blockquote > :last-child {
     margin-bottom: 0; }
-
-@import "{{ site.theme }}";
 
 .repo-language-color {
     border-radius: 50%;
