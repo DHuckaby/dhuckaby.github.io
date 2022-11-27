@@ -43,9 +43,11 @@ Normally I'm not one to rewrite something just because it is using old patterns 
 
 The first step I decided to do was document my existing Busted API using an OpenAPI 3.0 config and generate a client integration via [SwaggerHub](https://swagger.io/tools/swaggerhub/). This provided an honestly bad implementation to interface with but so far it has been functional enough that I have not bothered to write my own yet. With a couple wrapper classes I could hide away their bad auto-generated code. After configuring authentication I was effectively ready to start building out my user interface.
 
-> **Building with Compose overall is pretty frustrating**
+
+> **Building with Compose overall is frustrating**
 >
-> All of the institutional knowledge that we have obtained for building user interfaces can largely be thrown out. Components are named just different enough that they are unintuitive, and some things are named the same but can act differently depending on the context or even order of operations. For example, margin and padding back in the xml layout system had clear and defined behaviors. Both of those concepts are now combined into simply padding and depending on if you add a background before or after you set the padding it could display differently.
+> All of the institutional knowledge that we have obtained for building user interfaces can largely be thrown out. Components are named just different enough that they are unintuitive, and some things are named the same but can act differently depending on the context or even order of operations. For example, margin and padding back in the xml layout system had clear and defined behaviors. Both of those concepts are now combined into simply padding and depending on if you add a background before or after you set the padding it will display differently.
+
 
 I built my app based upon the [JetNews](https://github.com/android/compose-samples/tree/main/JetNews) sample provided by Google, and leveraged the [M3](https://m3.material.io/) components. At this point in time this is the absolute bleeding edge of what they recommend. Building out all of the top level sections I was able to fully immerse myself into the new layout system. I have a single Activity + ViewModel design with multiple sections all backed by a single state representing my view layer. Coordinating side effects like dialogs and snackbars can be a bit convoluted but that is what you get when you have a single state generating everything.
 
