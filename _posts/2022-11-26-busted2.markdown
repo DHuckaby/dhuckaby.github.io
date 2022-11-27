@@ -10,13 +10,13 @@ project_last_commit: Nov 26, 2022
 ---
 
 Overview
-========
+--------
 Busted is a media platform that I have been developing casually since 2017. It\'s purpose is to coordinate with the many different independent micro services I have running on my network and provide detailed information on the current state of things. Additionally whenever a manual action needs to be taken for maintenance, it will coordinate those actions. For example, I could display a list of running [Docker](https://www.docker.com/) containers in a mobile app and if one container is reporting a status check failure I could restart it from anywhere in the world with a simple click.
 
 
 
 Backend
-========
+-------
 Building out all of this has been an iterative process. Initially this was where I got my feet wet with spinning up a Docker container for hosting my media server in a more portable way. Then once that was up I started spinning up additional services that complimented the media server and eventually my own services to provide custom behavior.
 
 The first and most long running service is the foundation to the Busted platform, the Busted API. It is built leveraging the [Spring framework](https://docs.spring.io/spring/docs/current/spring-framework-reference/overview.html) to provide a nice interfacing layer for coordinating with my other services. Since they can and do have vastly different API implementations I felt that rolling my own layer here could allow me to isolate that adaption into one place and even more importantly, isolate those services from the outside world.
@@ -24,11 +24,11 @@ The first and most long running service is the foundation to the Busted platform
 
 
 Frontend
-========
+--------
 Since this is an internal tool and Android has been my platform of choice for a decade I decided to build out the frontend for it alone. Since the API is pretty stable Busted could be used for testing out other platforms in the future, but for now this is it.
 
 Busted 1.0
-----------
+==========
 The first iteration of the Android client was built in Java, leveraging the MVP design pattern. It was implemented using the common tools of trade at the time of [RxJava2](https://github.com/ReactiveX/RxJava), [Dagger](https://google.github.io/dagger/), and [Butterknife](https://github.com/JakeWharton/butterknife). The design took inspiration from some of my previous internal projects but it was all pretty cut and dry, I wasn't trying to win any design awards here. Below are some screenshots from the client.
 
 <p align="center" style="padding-top:20px;padding-bottom:20px;">
@@ -40,7 +40,7 @@ The first iteration of the Android client was built in Java, leveraging the MVP 
 </p>
 
 Busted 2.0
-----------
+==========
 Normally I'm not one to rewrite something just because it is using old patterns or technology, but this time is a bit different. The last few years Google has been pushing for their new layout system [Jetpack Compose](https://developer.android.com/jetpack/compose) HARD. Those who use it cast aside the old ways like they are inferior and I am susceptible to a little bit of FOMO from time to time. So I decided to dip my toes into it by diving headfirst into the deep end with no flotation device. With everyone I knew that knows Compose on holiday, I loaded up Android Studio and created a new project.
 
 The first step I decided to do was document my existing Busted API using an OpenAPI 3.0 config and generate a client integration via [SwaggerHub](https://swagger.io/tools/swaggerhub/). This provided an honestly bad implementation to interface with but so far it has been functional enough that I have not bothered to write my own yet. With a couple wrapper classes I could hide away their bad auto-generated code. After configuring authentication I was effectively ready to start building out my user interface.
