@@ -9,7 +9,7 @@ project_commits: 334
 project_last_commit: Nov 26, 2022
 ---
 
-Busted is a media platform that I have been developing casually since 2017. It\'s purpose is to coordinate with the many different independent micro services I have running on my network and provide detailed information on the current state of things. Additionally whenever a manual action needs to be taken for maintenance, it will coordinate those actions. For example, I could display a list of running [Docker](https://www.docker.com/) containers in a mobile app and if one container is reporting a status check failure I could restart it from anywhere in the world with a simple click.
+Busted is a platform that I have been developing casually since 2017. It\'s purpose is to coordinate with the many different independent services I have running on my network and provide detailed information on the current state of things. Additionally whenever a manual action needs to be taken for maintenance, it will coordinate those actions. For example, I could display a list of running [Docker](https://www.docker.com/) containers in a mobile app and if one container is reporting a status check failure I could restart it from anywhere in the world with a simple click.
 
 
 
