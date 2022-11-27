@@ -4,11 +4,12 @@
 @import "{{ site.theme }}";
 
 blockquote {
-  color: #828282;
+  color: #999999;
   border-left: 4px solid #e8e8e8;
   padding-left: 15px;
   font-size: 17px;
-  letter-spacing: -1px; }
+  letter-spacing: -1px;
+  font-style: normal; }
   blockquote > :last-child {
     margin-bottom: 0; }
 
