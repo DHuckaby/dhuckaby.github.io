@@ -23,7 +23,7 @@ The first and most long running service is the foundation to the Busted platform
 
 Frontend
 --------
-Since this is an internal tool and Android has been my platform of choice for a decade I decided to build out the frontend for it alone. Since the API is pretty stable Busted could be used for testing out other platforms in the future, but for now this is it.
+Since this is an internal tool and Android has been my platform of choice for a decade I decided to build out the frontend for it alone. With the API being stable Busted could be used for testing out other platforms in the future, but for now this is it.
 
 Busted 1.0
 ==========
