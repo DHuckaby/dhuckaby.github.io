@@ -45,7 +45,7 @@ This was all made possible by intercepting the network requests of the native An
    style="padding-left:20px;padding-bottom:20px;">
 Arguably the most fun part of the game is the ability to build and destroy things with a group of people. Using this client cuts out that entirely since you physically don't need to go to those locations. So I wanted to augment my normal play with teammates by giving myself essentially unlimited gear.
 
-Using the known locations of all portals in an area I was able to build a shortest path route to them all. Leveraging the automatic drift and speed limit protections I was able to safely navigate to all locations and harvest massive quantities of items. To eliminate the problem of running out of inventory space I build a simple algorithm that would clean up unwanted items if I hit a set threshold.
+Using the known locations of all portals in an area I was able to build a shortest path route to them all. Leveraging the automatic drift and speed limit protections I was able to safely navigate to all locations and harvest massive quantities of items. To eliminate the problem of running out of inventory space I built a simple algorithm that would clean up unwanted items if I hit a set threshold.
 
 I was able to get hundreds of thousands of items this way and it was completely undetectable to all other players around me. I could go in person and play without any limitations or restrictions on what items I would use since I could get more at any time.
 
@@ -59,4 +59,4 @@ Users are required to use a specific amount of energy to do any action that inte
 
 Upon finding out that the specific network response that consumes that XM from around the player doesn't actually validate correctly I started abusing it. I look for all XM around the player's location within a set distance and consume it all. Once the players XM limit has been reached it essentially destroys the XM. This was abused to destroy all XM in an area so opponents can't use this to their advantage.
 
-I learned later that this was even more broken. The unique identifiers for the XM themselves was never validated and could be repeated for infinite untraceable XM.
+I learned later that this was even more broken. The unique identifiers for the XM themselves were never validated and could be repeated for infinite untraceable XM.
