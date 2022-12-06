@@ -30,11 +30,10 @@ Busted 1.0
 The first iteration of the Android client was built in Java, leveraging the MVP design pattern. It was implemented using the common tools of trade at the time of [RxJava2](https://github.com/ReactiveX/RxJava), [Dagger](https://google.github.io/dagger/), and [Butterknife](https://github.com/JakeWharton/butterknife). The design took inspiration from some of my previous internal projects but it was all pretty cut and dry, I wasn't trying to win any design awards here. Below are some screenshots from the client.
 
 <p align="center" style="padding-top:20px;padding-bottom:20px;">
-  <img src="/assets/busted/v1_image1.png" width="19%" />
-  <img src="/assets/busted/v1_image2.png" width="19%" />
-  <img src="/assets/busted/v1_image3.png" width="19%" />
-  <img src="/assets/busted/v1_image4.png" width="19%" />
-  <img src="/assets/busted/v1_image5.png" width="19%" />
+  <img src="/assets/busted/v1_image1.png" width="24%" />
+  <img src="/assets/busted/v1_image2.png" width="24%" />
+  <img src="/assets/busted/v1_image3.png" width="24%" />
+  <img src="/assets/busted/v1_image4.png" width="24%" />
 </p>
 
 Busted 2.0
@@ -53,10 +52,15 @@ I based my Compose integration upon the [JetNews](https://github.com/android/com
 
 This exercise was a good one, but I don't think this is the final iteration of the layout system. As the system matures over time we will be able to build amazing things with it. I will not be casting the xml layout system aside for now, but for non-production code I will also be using Compose. I still have quite a bit of work left to go on this project alone.
 
-<p align="center" style="padding-top:20px;padding-bottom:20px;">
-  <img src="/assets/busted/v2_image1.png" width="19%" />
-  <img src="/assets/busted/v2_image2.png" width="19%" />
-  <img src="/assets/busted/v2_image3.png" width="19%" />
-  <img src="/assets/busted/v2_image4.png" width="19%" />
-  <img src="/assets/busted/v2_image5.png" width="19%" />
+<p align="center" style="padding-top:20px;">
+  <img src="/assets/busted/v2_image1.png" width="24%" />
+  <img src="/assets/busted/v2_image2.png" width="24%" />
+  <img src="/assets/busted/v2_image3.png" width="24%" />
+  <img src="/assets/busted/v2_image4.png" width="24%" />
+</p>
+<p align="center" style="padding-bottom:20px;">
+  <img src="/assets/busted/v2_image5.png" width="24%" />
+  <img src="/assets/busted/v2_image6.png" width="24%" />
+  <img src="/assets/busted/v2_image7.png" width="24%" />
+  <img src="/assets/busted/v2_image8.png" width="24%" />
 </p>
