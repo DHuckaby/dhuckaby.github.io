@@ -1,0 +1,43 @@
+site_name: Continuous Development
+nav:
+  - index.md
+plugins:
+  - search
+  - redirects:
+      redirect_maps:
+        'busted.md': 'projects/2022-11-26-busted.md'
+        'progress.md': 'projects/2019-03-09-progress.md'
+        'tweedle.md': 'projects/2019-03-08-tweedle.md'
+        'mtv.md': 'projects/2019-03-07-movies-tv.md'
+        'ipa.md': 'projects/2019-03-05-ipa.md'
+        'review/2019/03/05/ipa.html': 'projects/2019-03-05-ipa.md'
+theme:
+  name: material
+  logo: assets/images/logo.svg
+  favicon: assets/images/favicon.ico
+  custom_dir: overrides
+  palette:
+    scheme: slate
+    primary: black
+    accent: indigo
+  features:
+    - navigation.tabs
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/dhuckaby
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/dhuckaby
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:daniel@huckaby.dev
+extra_css: [ stylesheets/extra.css ]
+copyright: "&copy; 2019 - <script>document.write(new Date().getFullYear())</script> Daniel Huckaby"
