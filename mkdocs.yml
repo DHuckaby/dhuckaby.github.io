@@ -1,6 +1,6 @@
-site_name: Continuous Development
+site_name: Daniel Huckaby
 nav:
-  - index.md
+  - Projects: index.md
 plugins:
   - search
   - redirects:

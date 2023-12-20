@@ -1,8 +1,24 @@
 ---
 hide:
 - toc
+- navigation
 ---
-
+<style>
+  .md-header__title {
+    text-indent: -10000px;
+  }
+  .md-typeset h1 {
+     display: none;
+     margin-top:40px;
+  }
+ .md-grid {
+	 max-width: 40rem;
+  }
+  .md-main__inner {
+     margin-top: -1.5rem;
+     margin-bottom: 1.5rem;
+  }
+</style>
 # Projects
 ## [**Busted**](/busted)
 <span class="repo-language-color" style="background-color: #A97BFF"></span> Kotlin &ensp; **334** commits &ensp; Last commit on Nov 26, 2022
