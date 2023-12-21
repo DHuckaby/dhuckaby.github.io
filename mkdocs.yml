@@ -1,8 +1,8 @@
 site_name: Daniel Huckaby
 nav:
   - 'Projects': 'index.md'
-  - 'Learnings':
-            - 'learnings/2023-12-20-dynamic-app-icon.md'
+#  - 'Learnings':
+#            - 'learnings/2023-12-20-dynamic-app-icon.md'
 plugins:
   - search
   - redirects:
@@ -13,6 +13,7 @@ plugins:
         'mtv.md': 'projects/2019-03-07-movies-tv.md'
         'ipa.md': 'projects/2019-03-05-ipa.md'
         'review/2019/03/05/ipa.html': 'projects/2019-03-05-ipa.md'
+  - glightbox
 theme:
   name: material
   logo: assets/images/logo.svg
