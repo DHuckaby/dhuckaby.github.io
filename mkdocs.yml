@@ -1,6 +1,8 @@
 site_name: Daniel Huckaby
 nav:
-  - Projects: index.md
+  - 'Projects': 'index.md'
+  - 'Learnings':
+            - 'learnings/2023-12-20-dynamic-app-icon.md'
 plugins:
   - search
   - redirects:
@@ -22,6 +24,7 @@ theme:
     accent: indigo
   features:
     - navigation.tabs
+    - navigation.top
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
