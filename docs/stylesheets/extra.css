@@ -48,3 +48,9 @@
      margin-bottom: 1.5rem;
 }
 
+@media only screen and (max-width: 501px) {
+    .md-header__title {
+        text-indent: 0px;
+    }
+}
+
