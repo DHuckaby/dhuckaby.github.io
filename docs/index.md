@@ -14,9 +14,9 @@ hide:
 </style>
 # Projects
 ## [**Busted**](/busted)
-<span class="repo-language-color" style="background-color: #A97BFF"></span> Kotlin &ensp; **334** commits &ensp; <span style="white-space: nowrap">Last commit on Nov 26, 2022</span>
+<span class="repo-language-color" style="background-color: #A97BFF"></span> Kotlin &ensp; **484** commits &ensp; <span style="white-space: nowrap">Last commit on Aug 24, 2024</span>
 ## [**Progress**](/progress)
-<span class="repo-language-color" style="background-color: #A97BFF"></span> Kotlin &ensp; **465** commits &ensp; <span style="white-space: nowrap">Last commit on Oct 24, 2018</span>
+<span class="repo-language-color" style="background-color: #A97BFF"></span> Kotlin &ensp; **470** commits &ensp; <span style="white-space: nowrap">Last commit on Dec 3, 2023</span>
 ## [**Tweedle for Twitter**](/tweedle)
 <span class="repo-language-color" style="background-color: #b07219"></span> Java &ensp; **3,818** commits &ensp; <span style="white-space: nowrap">Last commit on Sep 15, 2017</span>
 ## [**Movies & TV**](/mtv)
