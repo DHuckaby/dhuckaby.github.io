@@ -17,7 +17,6 @@ plugins:
   - glightbox
   - social
   - git-revision-date-localized:
-      enable_creation_date: true
       exclude:
         - index.md
 theme:
