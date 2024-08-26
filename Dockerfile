@@ -4,7 +4,6 @@ RUN pip install --no-cache-dir \
   mkdocs-redirects \
   mkdocs-glightbox \
   mkdocs-material[imaging] \
-  git-revision-date-localized \
   mkdocs-git-revision-date-localized-plugin
 
 ENTRYPOINT ["mkdocs"]
