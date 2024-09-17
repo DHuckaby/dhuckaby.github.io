@@ -24,7 +24,7 @@ Previously with projects like [Progress](https://huckaby.dev/progress) and [Bust
 ### Cloudflare
 One of the biggest challenges in web scraping is trying to bypass Cloudflare protections. They are typically in place to deter bots and denial of service attacks. This adds an extra layer of security to any website (for a price) to ensure malicious actors are not misusing your website.
 
-[FlareSolverr](https://github.com/FlareSolverr/FlareSolverr) has entered the chat. This tool acts as a proxy that can attempt to bypass all of those protections. It is updated semi-regularly and has a large community of users using it to enable their web scrapers. This is used to scrap all sorts of websites and is supported by many tools as a built in option if you self host it. It isn't perfect, but it is better than just switching your headers and hoping for the best like with Tachiyomi.
+[FlareSolverr](https://github.com/FlareSolverr/FlareSolverr) acts as a proxy that can attempt to bypass all of those protections. It is updated semi-regularly and has a large community of users using it to enable their web scrapers. This is used to scrap all sorts of websites and is supported by many tools as a built in option if you self host it. It isn't perfect, but it is better than just switching your headers and hoping for the best like with Tachiyomi.
 ### Komga
 The last piece of the puzzle was understanding how the data should be formatted on disk. After reviewing all of the documentation I could find and testing out a few options I ended up on the following format:
 
@@ -57,7 +57,10 @@ After six months of dealing with Flaresolverr breaking randomly and following th
 
 In theory if I could refactor the implementation so that I no longer directly rely upon things like Flaresolverr, I could swap it out with other options. It could be one of the many forks of Flaresolverr, or something wild like an Android application that directly loads the content into a WebView and pipes the content back like a proxy. This would allow me to experiment with different options without needing to rewrite my whole codebase.
 <p align="center" style="padding-top:20px;padding-bottom:20px;">
-  <img src="/assets/images/mangaloid/wtfq.png" width="100%" />
+  <img
+	src="/assets/images/mangaloid/wtfq.png"
+	align="center"
+    width="575" />
 </p>
 
 ### Rewriting the whole codebase
@@ -65,6 +68,6 @@ Although my first pass at this was written in Python, I didn't think adding this
 
 I wrote out my initial draft of the queue implementation, and got to work recreating my web scraper in Kotlin using Ktor and JSoup. Getting the existing api contract up and running using Ktor was really simple, even though it was my first time using the framework. I have used JSoup before, but not with the level of detail needed for this project. In the end, css queries were the MVP and serve as the backbone of the project.
 
-I ended up writing three different Daemon implementations. The first one was for Flaresolverr, the second was for MITM proxy, and lastly an Android client for proxying manually if things ever broke. I have some other options as well that I might try, a browser plugin could be nice for example. The idea around this framework is I should be able to adapt it to pretty much any tool if needed to ensure it keeps on working as intended.
+I ended up writing three different Daemon (request handler) implementations. The first one was for Flaresolverr, the second was for MITM proxy, and lastly an Android client for proxying manually if things ever broke. I have some other options as well that I might try, a browser plugin could be nice for example. The idea around this framework is I should be able to adapt it to pretty much any tool if needed to ensure it keeps on working as intended.
 ### Final thoughts
 So far this latest iteration of Mangaloid is stable and from my perspective maintainable. Time will tell if that holds true. I'll learn eventually if some of my gambles with things like Komga were worth it. Worst cast I can always write my own extension, but that is a problem for future me.
