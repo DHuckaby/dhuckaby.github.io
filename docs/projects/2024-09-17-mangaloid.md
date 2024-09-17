@@ -60,7 +60,7 @@ In theory if I could refactor the implementation so that I no longer directly re
   <img
 	src="/assets/images/mangaloid/wtfq.png"
 	align="center"
-    width="575" />
+    width="500" />
 </p>
 
 ### Rewriting the whole codebase
