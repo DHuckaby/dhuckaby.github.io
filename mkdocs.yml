@@ -7,6 +7,7 @@ plugins:
   - search
   - redirects:
       redirect_maps:
+        'mangaloid.md': 'projects/2024-09-17-mangaloid.md'
         'busted.md': 'projects/2022-11-26-busted.md'
         'progress.md': 'projects/2019-03-09-progress.md'
         'tweedle.md': 'projects/2019-03-08-tweedle.md'
