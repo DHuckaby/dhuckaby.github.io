@@ -70,4 +70,4 @@ I wrote out my initial draft of the queue implementation, and got to work recrea
 
 I ended up writing three different Daemon (request handler) implementations. The first one was for Flaresolverr, the second was for MITM proxy, and lastly an Android client for proxying manually if things ever broke. I have some other options as well that I might try, a browser plugin could be nice for example. The idea around this framework is I should be able to adapt it to pretty much any tool if needed to ensure it keeps on working as intended.
 ### Final thoughts
-So far this latest iteration of Mangaloid is stable and from my perspective maintainable. Time will tell if that holds true. I'll learn eventually if some of my gambles with things like Komga were worth it. Worst cast I can always write my own extension, but that is a problem for future me.
+So far this latest iteration of Mangaloid is stable and from my perspective maintainable. Time will tell if that holds true. I'll learn eventually if some of my gambles with things like Komga were worth it. Worst case I can always write my own extension, but that is a problem for future me.
