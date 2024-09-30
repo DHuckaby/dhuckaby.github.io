@@ -1,5 +1,5 @@
 ---
-title: Dynamic App Icons
+title: Dynamic launcher icons
 hide:
 - toc
 ---

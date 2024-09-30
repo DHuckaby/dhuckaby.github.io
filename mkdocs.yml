@@ -15,6 +15,7 @@ plugins:
         'ipa.md': 'projects/2019-03-05-ipa.md'
         'review/2019/03/05/ipa.html': 'projects/2019-03-05-ipa.md'
         'learnings/icons.md': 'learnings/2024-08-25-dynamic-app-icons.md'
+        'learnings/modules.md': 'learnings/2024-09-29-modules.md'
   - glightbox
   - social
   - git-revision-date-localized:
