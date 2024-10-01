@@ -475,13 +475,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-weeds" class="md-nav__link">
+  <a href="#into-the-weeds" class="md-nav__link">
     <span class="md-ellipsis">
-      The Weeds
+      Into the weeds
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="The Weeds">
+    <nav class="md-nav" aria-label="Into the weeds">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -559,13 +559,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-weeds" class="md-nav__link">
+  <a href="#into-the-weeds" class="md-nav__link">
     <span class="md-ellipsis">
-      The Weeds
+      Into the weeds
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="The Weeds">
+    <nav class="md-nav" aria-label="Into the weeds">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -637,7 +637,7 @@
 </span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">    </span><span class="nt">&lt;/activity-alias&gt;</span><span class="w"> </span>
 </span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="nt">&lt;/application&gt;</span>
 </span></code></pre></div>
-<h3 id="the-weeds">The Weeds</h3>
+<h3 id="into-the-weeds">Into the weeds</h3>
 <p>The initial implementation of the activity-alias only showcases a single enabled alias, and a disabled one with an alternative icon applied. This concept does work for more than one disabled alias and can even extend to change the title of your application as well. Digging a bit further we need to understand how we can safely switch between those aliases without impacting our users negatively.</p>
 <p>The way we reference an activity-alias in code is via a class called <a href="https://developer.android.com/reference/android/content/ComponentName"><code>ComponentName</code></a>, for example the equivalent of the enabled alias above is <code>ComponentName(pkg, "$pkg.AliasDefault")</code>. This is used when communicating with the <a href="https://developer.android.com/reference/android/content/pm/PackageManager"><code>PackageManager</code></a> class, specifically we want to use it when calling <code>getComponentEnabledSetting</code> and <code>setComponentEnabledSetting</code>.</p>
 <p>At a high level we need to be able to not only enable the currently disabled alias, but also disable the currently enabled alias. If we blindly switch the states it will work, but your application will close automatically every single time you do. If you only want it to happen the first time you need to take into account the original default state. So when enabling the default alias, you just need to set the state to default. Or when disabling the non-default alias, you just need to set the state to default.</p>
