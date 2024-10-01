@@ -481,6 +481,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="The Weeds">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-project-in-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example project in action
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -550,6 +565,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="The Weeds">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-project-in-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example project in action
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -612,7 +642,8 @@
 <p>The way we reference an activity-alias in code is via a class called <a href="https://developer.android.com/reference/android/content/ComponentName"><code>ComponentName</code></a>, for example the equivalent of the enabled alias above is <code>ComponentName(pkg, "$pkg.AliasDefault")</code>. This is used when communicating with the <a href="https://developer.android.com/reference/android/content/pm/PackageManager"><code>PackageManager</code></a> class, specifically we want to use it when calling <code>getComponentEnabledSetting</code> and <code>setComponentEnabledSetting</code>.</p>
 <p>At a high level we need to be able to not only enable the currently disabled alias, but also disable the currently enabled alias. If we blindly switch the states it will work, but your application will close automatically every single time you do. If you only want it to happen the first time you need to take into account the original default state. So when enabling the default alias, you just need to set the state to default. Or when disabling the non-default alias, you just need to set the state to default.</p>
 <p>I have compiled an <a href="https://github.com/DHuckaby/Chameleon">example project</a> that does all of this that you can follow as a guide, or just copy/paste it like most do from StackOverflow. I don't mind either way, it is a pretty slick solution once it is in place. Given this is largely in uncharted territories, good luck if you ship it to production.</p>
-<video controls>
+<h4 id="example-project-in-action">Example project in action</h4>
+<video height="500" controls>
 <source src="https://github.com/DHuckaby/Chameleon/raw/refs/heads/main/docs/Screen_recording_20240825_224418.mp4" type="video/mp4">
 </video>
 
