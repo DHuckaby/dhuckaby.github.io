@@ -55,3 +55,7 @@ The way we reference an activity-alias in code is via a class called [`Component
 At a high level we need to be able to not only enable the currently disabled alias, but also disable the currently enabled alias. If we blindly switch the states it will work, but your application will close automatically every single time you do. If you only want it to happen the first time you need to take into account the original default state. So when enabling the default alias, you just need to set the state to default. Or when disabling the non-default alias, you just need to set the state to default.
 
 I have compiled an [example project](https://github.com/DHuckaby/Chameleon) that does all of this that you can follow as a guide, or just copy/paste it like most do from StackOverflow. I don't mind either way, it is a pretty slick solution once it is in place. Given this is largely in uncharted territories, good luck if you ship it to production.
+
+<video controls>
+<source src="https://github.com/DHuckaby/Chameleon/raw/refs/heads/main/docs/Screen_recording_20240825_224418.mp4" type="video/mp4">
+</video>
