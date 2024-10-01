@@ -54,3 +54,8 @@
     }
 }
 
+#video{
+  object-fit: initial;
+  width: 270px;
+  height: 570px;
+}
