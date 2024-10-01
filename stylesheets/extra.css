@@ -54,8 +54,6 @@
     }
 }
 
-#video{
-  object-fit: initial;
-  width: 270px;
-  height: 570px;
+#video {
+    max-width: 50%;
 }
