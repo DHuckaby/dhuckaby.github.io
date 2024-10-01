@@ -612,6 +612,9 @@
 <p>The way we reference an activity-alias in code is via a class called <a href="https://developer.android.com/reference/android/content/ComponentName"><code>ComponentName</code></a>, for example the equivalent of the enabled alias above is <code>ComponentName(pkg, "$pkg.AliasDefault")</code>. This is used when communicating with the <a href="https://developer.android.com/reference/android/content/pm/PackageManager"><code>PackageManager</code></a> class, specifically we want to use it when calling <code>getComponentEnabledSetting</code> and <code>setComponentEnabledSetting</code>.</p>
 <p>At a high level we need to be able to not only enable the currently disabled alias, but also disable the currently enabled alias. If we blindly switch the states it will work, but your application will close automatically every single time you do. If you only want it to happen the first time you need to take into account the original default state. So when enabling the default alias, you just need to set the state to default. Or when disabling the non-default alias, you just need to set the state to default.</p>
 <p>I have compiled an <a href="https://github.com/DHuckaby/Chameleon">example project</a> that does all of this that you can follow as a guide, or just copy/paste it like most do from StackOverflow. I don't mind either way, it is a pretty slick solution once it is in place. Given this is largely in uncharted territories, good luck if you ship it to production.</p>
+<video controls>
+<source src="https://github.com/DHuckaby/Chameleon/raw/refs/heads/main/docs/Screen_recording_20240825_224418.mp4" type="video/mp4">
+</video>
 
 
 
@@ -634,7 +637,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 30, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 1, 2024</span>
   </span>
 
     
