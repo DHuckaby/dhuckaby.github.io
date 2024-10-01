@@ -57,6 +57,6 @@ At a high level we need to be able to not only enable the currently disabled ali
 I have compiled an [example project](https://github.com/DHuckaby/Chameleon) that does all of this that you can follow as a guide, or just copy/paste it like most do from StackOverflow. I don't mind either way, it is a pretty slick solution once it is in place. Given this is largely in uncharted territories, good luck if you ship it to production.
 
 #### Example project in action
-<video height="500" controls>
+<video controls>
 <source src="https://github.com/DHuckaby/Chameleon/raw/refs/heads/main/docs/Screen_recording_20240825_224418.mp4" type="video/mp4">
 </video>
