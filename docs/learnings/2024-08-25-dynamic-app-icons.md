@@ -4,12 +4,11 @@ hide:
 - toc
 ---
 
-### Pitch
 Have you ever wanted to swap your Android app's icon at runtime? It could be useful as a premium feature or as a way for your users to customize the feel of your application. I have a solution that works for the most part, with some drawbacks that will need to be weighed before implementing it into your application.
 
 Starting off this is the exact same method seen in applications such as Discord or Todoist. The main drawback is that the first time we enable this new behavior your application will be closed automatically as your new icon is applied. Subsequent calls to reset or switch to any other icons will not result in your application closing. This is undefined behavior, and I have no workaround for it. If that is fine, let's get into the weeds.
 
-### Activity Alias
+### Activity alias
 Traditionally I have only ever used an [activity-alias](https://developer.android.com/guide/topics/manifest/activity-alias-element) to redirect my launching activity reference when I have moved the actual class into a new package. We are going to be leveraging that concept to not only redirect once to our launching activity, but many times depending on how many icons you want. The catch is that by default only one of those should be enabled. That way you can at runtime switch between them by enabling and disabling aliases, resulting in the perception of the icon changing to the user.
 
 ```xml
