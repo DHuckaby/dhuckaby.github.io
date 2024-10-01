@@ -47,7 +47,7 @@ Traditionally I have only ever used an [activity-alias](https://developer.androi
 </application>
 ```
 
-### The Weeds
+### Into the weeds
 The initial implementation of the activity-alias only showcases a single enabled alias, and a disabled one with an alternative icon applied. This concept does work for more than one disabled alias and can even extend to change the title of your application as well. Digging a bit further we need to understand how we can safely switch between those aliases without impacting our users negatively.
 
 The way we reference an activity-alias in code is via a class called [`ComponentName`](https://developer.android.com/reference/android/content/ComponentName), for example the equivalent of the enabled alias above is `ComponentName(pkg, "$pkg.AliasDefault")`. This is used when communicating with the [`PackageManager`](https://developer.android.com/reference/android/content/pm/PackageManager) class, specifically we want to use it when calling `getComponentEnabledSetting` and `setComponentEnabledSetting`.
