@@ -738,7 +738,7 @@
 
 <h2 id="modules">Modules</h2>
 <h4 id="standing-on-the-shoulders-of-giants">Standing on the shoulders of giants</h4>
-<p>The examples shown above highlight a commonality seen across domains. Using an abstraction, we are able to scope behavior and easily maintain our business logic. This can be adapted to our own problem. If we break up our code such that we define a single unit into both a contract and an implementation, it can be accessed without needing to pulling in the whole implementation.</p>
+<p>The examples shown above highlight a commonality seen across domains. Using an abstraction, we are able to scope behavior and easily maintain our business logic. This can be adapted to our own problem. If we break up our code such that we define a single unit into both a contract module and an implementation module, it can be accessed without needing to pulling in the whole implementation.</p>
 <p align="center" style="padding-top:20px;padding-bottom:20px;">
   <a class="glightbox" href="/assets/images/modules/simple.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/assets/images/modules/simple.png" width="100%" /></a>
 </p>
@@ -754,7 +754,7 @@
 </p>
 
 <h4 id="implementation-details">Implementation details</h4>
-<p>Contract modules can comprise of interfaces, data classes, enum/sealed classes, and constants. Implementations can be bound to the implementations via dependency injection, preferably using Hilt. You can even abstract away entire experiences behind a contract and simply launch them via interface. Edge cases like reusable views should probably be standalone modules only used by implementations, but keep it tightly scoped or it quickly can get out of hand.</p>
+<p>Contract modules can comprise of interfaces, data classes, enum/sealed classes, and constants. Implementations can be bound to the contracts via dependency injection, preferably using Hilt. You can even abstract away entire experiences behind a contract and simply launch them via interface. Edge cases like reusable views should probably be standalone modules only used by implementations, but keep it tightly scoped or it quickly can get out of hand.</p>
 <h4 id="references">References</h4>
 <ul>
 <li><a href="https://www.droidcon.com/2022/06/28/solid-modularization-untangling-the-dependency-graph/">Solid Modularization - Untangling the dependency graph</a></li>
@@ -782,7 +782,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 1, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 8, 2024</span>
   </span>
 
     
