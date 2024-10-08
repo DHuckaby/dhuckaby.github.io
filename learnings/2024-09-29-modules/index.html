@@ -727,20 +727,20 @@
 <h4 id="web-services">Web services</h4>
 <p>One of the most common things we interact with outside of our projects are web services. Typically we connect and leverage them through common protocols like JSON or Protobuf, with strong API contracts defined per service. This tells us exactly how we should interact with them, and what is and what is not allowed. Using this as an example, we can look at our usage of them kind of like this:</p>
 <p align="center" style="padding-top:20px;padding-bottom:20px;">
-  <a class="glightbox" href="/assets/images/modules/api.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/assets/images/modules/api.png" width="100%" /></a>
+  <a class="glightbox" href="/assets/images/modules/api.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/assets/images/modules/api.png" width="100%" align="center" /></a>
 </p>
 
 <h4 id="interfaces">Interfaces</h4>
 <p>A common pattern is the usage of a style of class called an interface. It allows us to easily define what the expected behavior is without referencing the class itself. This can be useful for cases where we want to abstract out the implementation from the consumer of the class, or if we want to be able to switch out the implementation itself without impacting the consumer. Lots of good reasons to use an interface exist, but we can also simplify it down to something like this:</p>
 <p align="center" style="padding-top:20px;padding-bottom:20px;">
-  <a class="glightbox" href="/assets/images/modules/interfaces.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/assets/images/modules/interfaces.png" width="100%" /></a>
+  <a class="glightbox" href="/assets/images/modules/interfaces.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/assets/images/modules/interfaces.png" width="100%" align="center" /></a>
 </p>
 
 <h2 id="modules">Modules</h2>
 <h4 id="standing-on-the-shoulders-of-giants">Standing on the shoulders of giants</h4>
 <p>The examples shown above highlight a commonality seen across domains. Using an abstraction, we are able to scope behavior and easily maintain our business logic. This can be adapted to our own problem. If we break up our code such that we define a single unit into both a contract module and an implementation module, it can be accessed without needing to pulling in the whole implementation.</p>
 <p align="center" style="padding-top:20px;padding-bottom:20px;">
-  <a class="glightbox" href="/assets/images/modules/simple.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/assets/images/modules/simple.png" width="100%" /></a>
+  <a class="glightbox" href="/assets/images/modules/simple.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/assets/images/modules/simple.png" width="100%" align="center" /></a>
 </p>
 
 <h4 id="build-cache">Build cache</h4>
@@ -750,7 +750,7 @@
 <h4 id="scaled-out">Scaled out</h4>
 <p>You won't be able to avoid the spiderweb that will become your module dependency graph, but using this technique your modules will remain lightweight. You will need to ensure all dependencies on the contract modules are contracts or external dependencies, or you won't benefit from the build cache benefits. If you have existing modules already you should attempt to create a contract for them and dereference them, or refactor the module altogether.</p>
 <p align="center" style="padding-top:20px;padding-bottom:20px;">
-  <a class="glightbox" href="/assets/images/modules/complex.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/assets/images/modules/complex.png" width="100%" /></a>
+  <a class="glightbox" href="/assets/images/modules/complex.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="/assets/images/modules/complex.png" width="100%" align="center" /></a>
 </p>
 
 <h4 id="implementation-details">Implementation details</h4>
