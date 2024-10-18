@@ -2,7 +2,6 @@ site_name: Daniel Huckaby
 nav:
   - 'Projects': 'index.md'
   - 'Learnings':
-    - 'learnings/2024-09-29-modules.md'
     - 'learnings/2024-08-25-dynamic-app-icons.md'
 plugins:
   - search
