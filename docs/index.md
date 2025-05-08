@@ -13,7 +13,7 @@ hide:
   }
 </style>
 # Projects
-## [**Mangaloid**](/mangaloid)
+## [**Mangari**](/manga)
 <span class="repo-language-color" style="background-color: #A97BFF"></span> Kotlin &ensp; **361** commits &ensp; <span style="white-space: nowrap">Last commit on Sep 15th, 2024</span>
 ## [**Busted**](/busted)
 <span class="repo-language-color" style="background-color: #A97BFF"></span> Kotlin &ensp; **484** commits &ensp; <span style="white-space: nowrap">Last commit on Aug 24th, 2024</span>
